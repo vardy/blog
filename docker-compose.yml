@@ -11,6 +11,7 @@ services:
       - .:/blog/
     networks:
       - webdeploy_web-net
+    command: bundle exec jekyll serve -H 0.0.0.0 -t ./_config.yml
 
 networks:
   webdeploy_web-net:
