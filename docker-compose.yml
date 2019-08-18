@@ -2,15 +2,16 @@ version: "2.0"
 
 services:
   jarredvardy_blog:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     environment:
       - JEKYLL_ENV
     ports:
       - 4000:4000
-    volumes_from:
-    - webdeploy_nginx:rw
+    volumes:
+      - .:/blog/
+    networks:
+      webdeploy_web-net
 
-#volumes: 
-#  webdeploy_blog:
+networks:
+  webdeploy_web-net:
+    external: true
