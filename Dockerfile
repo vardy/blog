@@ -15,4 +15,4 @@ COPY . .
 
 EXPOSE 4000
 
-CMD ["bundle", "exec", "jekyll", "-H", "0.0.0.0", "serve"]
+CMD ["bundle", "exec", "jekyll", "serve", "-H", "0.0.0.0", "-t", "./_config.yml"]
