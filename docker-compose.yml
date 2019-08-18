@@ -10,7 +10,7 @@ services:
     ports:
       - 4000:4000
     volumes:
-      - blog:/blog/
+      - webdeploy_blog:/blog/
 
 volumes: 
   webdeploy_blog:
