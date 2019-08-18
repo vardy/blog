@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/blog/
     networks:
-      webdeploy_web-net
+      - webdeploy_web-net
 
 networks:
   webdeploy_web-net:
