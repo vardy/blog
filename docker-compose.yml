@@ -9,9 +9,9 @@ services:
       - 4000:4000
     volumes:
       - .:/blog/
-    #networks:
-    #  - webdeploy_web-net
+    networks:
+      - webdeploy_web-net
 
-#networks:
-#  webdeploy_web-net:
-#    external: true
+networks:
+  webdeploy_web-net:
+    external: true
