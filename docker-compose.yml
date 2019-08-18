@@ -13,4 +13,4 @@ services:
       - blog:/blog/
 
 volumes: 
-  blog:
+  webdeploy_blog:
