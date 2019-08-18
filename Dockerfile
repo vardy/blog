@@ -7,6 +7,7 @@ ENV LANGUAGE en_US.UTF-8
 
 WORKDIR /blog/                                                                                                          
 COPY Gemfile jarredvardy-blog.gemspec ./
+RUN gem install bundler
 RUN bundle update                                                                                                      
 RUN bundle install
 
