@@ -10,7 +10,7 @@ services:
     ports:
       - 4000:4000
     volumes_from:
-    - webdeploy_blog:rw
+    - webdeploy_nginx:rw
 
-volumes: 
-  webdeploy_blog:
+#volumes: 
+#  webdeploy_blog:
