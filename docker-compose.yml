@@ -9,8 +9,8 @@ services:
       - JEKYLL_ENV
     ports:
       - 4000:4000
-    volumes:
-      - webdeploy_blog:/blog/
+    volumes_from:
+    - webdeploy_blog:rw
 
 volumes: 
   webdeploy_blog:
